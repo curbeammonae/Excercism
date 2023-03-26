@@ -20,3 +20,16 @@ export function remainingMinutesInOven(actualMinutesInOven) {
   }
   remainingMinutesInOven(30)
   
+//   Implement the preparationTimeInMinutes function that takes the number of layers 
+//   you added to the lasagna as a parameter and returns how many minutes you spent 
+//   preparing the lasagna, assuming each layer takes you 2 minutes to prepare.
+
+// preparationTimeInMinutes(2);
+// // => 4
+
+export function preparationTimeInMinutes(numberOfLayers) {
+    let min = numberOfLayers * 2
+    return min
+}
+
+preparationTimeInMinutes(2)
