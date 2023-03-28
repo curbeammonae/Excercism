@@ -25,3 +25,21 @@ function daysInBudget(budget, ratePerHour) {
   
   }
   daysInBudget(20000, 89)
+
+//   Often, the freelancer's clients hire them for projects spanning over multiple months. In these cases, the
+//    freelancer decides to offer a discount for every full month, and the remaining days are billed at day rate. 
+//    Every month has 22 billable days. Help them estimate their cost for such projects, given an hourly rate, the number of days the project spans,
+//     and a monthly discount rate. The discount is always passed as a number, where 42% becomes 0.42. The result must be rounded up to the nearest whole number.
+
+// priceWithMonthlyDiscount(89, 230, 0.42);
+// // => 97972
+
+function priceWithMonthlyDiscount(ratePerHour, numDays, discount) {
+    let rate = ratePerHour * 8
+    let d = rate * numDays
+    let t = d * discount
+    let f = d - t
+    return Math.ceil(f)  
+    
+  }
+  priceWithMonthlyDiscount(89, 230, .42) 
