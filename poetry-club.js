@@ -17,3 +17,22 @@
 function frontDoorResponse(line) {
     return line[0]
   }
+
+//   Now that you have all the correct letters, all you need to do to get the password for the front door is to correctly capitalize the word.
+
+// Implement the function frontDoorPassword that accepts a string (the combined letters you found in task 1) and returns it correctly capitalized.
+
+// frontDoorPassword('SHIRE');
+// // => "Shire"
+
+// frontDoorPassword('shire');
+// // => "Shire"
+
+function frontDoorPassword(word) {
+    let letter = word[0].toUpperCase()
+    let sliced = word.slice(1).toLowerCase()
+      return letter + sliced
+      
+      
+      
+    }
