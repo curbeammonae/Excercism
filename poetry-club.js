@@ -36,3 +36,30 @@ function frontDoorPassword(word) {
       
       
     }
+
+//     To determine letters for the back door password, you need to respond with the last letter of the line of the poem that the guard recites to you.
+
+// The members of the poetry club are really clever. The poem mentioned before is also telestich, which means that the last letter of each sentence also forms a word:
+
+// Stands so high
+// Huge hooves too
+// Impatiently waits for
+// Reins and harness
+// Eager to leave
+// When the guard recites Stands so high, you'll respond h, when the guard recites Huge hooves too, you'll respond o.
+
+// Note that sometimes the guard does stylistic pauses (in the form of whitespace) at the beginning or at the end of a line. You will need to ignore those pauses to derive the correct letter.
+
+// Implement the function backDoorResponse that takes a line of the poem as an argument and returns the last letter of that line that is not a whitespace character.
+
+// backDoorResponse('Stands so high');
+// // => "h"
+
+// backDoorResponse('Stands so high   ');
+// // => "h"
+
+export function backDoorResponse(line) {
+    let rm = line.trim()
+    let last= rm[rm.length -1]
+    return last
+  }
