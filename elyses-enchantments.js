@@ -20,3 +20,14 @@ export function setItem(cards, position, replacementCard) {
     cards.splice(position, 1, replacementCard);
      return cards;
    }
+
+//    Make a card appear by inserting a new card at the top of the stack. Return the adjusted stack.
+
+// const newCard = 8;
+// insertItemAtTop([5, 9, 7, 1], newCard);
+// // => [5, 9, 7, 1, 8]
+
+export function insertItemAtTop(cards, newCard) {
+    cards.push(newCard)
+    return cards
+  }
