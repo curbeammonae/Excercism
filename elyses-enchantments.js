@@ -5,7 +5,7 @@
 // // => 4
 
 
-export function getItem(cards, position) {
+function getItem(cards, position) {
     return cards[position]
  }
  
@@ -16,7 +16,7 @@ export function getItem(cards, position) {
 // setItem([1, 2, 4, 1], position, replacementCard);
 // // => [1, 2, 6, 1]
 
-export function setItem(cards, position, replacementCard) {
+ function setItem(cards, position, replacementCard) {
     cards.splice(position, 1, replacementCard);
      return cards;
    }
@@ -27,7 +27,7 @@ export function setItem(cards, position, replacementCard) {
 // insertItemAtTop([5, 9, 7, 1], newCard);
 // // => [5, 9, 7, 1, 8]
 
-export function insertItemAtTop(cards, newCard) {
+function insertItemAtTop(cards, newCard) {
     cards.push(newCard)
     return cards
   }
@@ -40,5 +40,13 @@ export function insertItemAtTop(cards, newCard) {
 
 function removeItem(cards, position) {
     cards.splice(position, 1)
+    return cards
+  }
+//   Make a card disappear by removing the card at the top of the stack. Return the adjusted stack.
+
+// removeItemFromTop([3, 2, 6, 4, 8]);
+// // => [3, 2, 6, 4]
+function removeItemFromTop(cards) {
+    cards.pop()
     return cards
   }
