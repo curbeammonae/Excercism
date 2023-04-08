@@ -31,3 +31,14 @@ export function insertItemAtTop(cards, newCard) {
     cards.push(newCard)
     return cards
   }
+//   Make a card disappear by removing the card at the given position from the stack. Return the adjusted stack.
+
+// const position = 2;
+// removeItem([3, 2, 6, 4, 8], position);
+// // => [3, 2, 4, 8]
+
+
+function removeItem(cards, position) {
+    cards.splice(position, 1)
+    return cards
+  }
