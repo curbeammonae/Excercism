@@ -50,3 +50,14 @@ function removeItemFromTop(cards) {
     cards.pop()
     return cards
   }
+
+//   Make a card appear by inserting a new card at the bottom of the stack. Return the adjusted stack.
+
+// const newCard = 8;
+// insertItemAtBottom([5, 9, 7, 1], newCard);
+// // => [8, 5, 9, 7, 1]
+
+function insertItemAtBottom(cards, newCard) {
+    cards.unshift(newCard)
+    return cards
+  }
