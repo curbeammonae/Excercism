@@ -71,3 +71,18 @@ function removeItemAtBottom(cards) {
     return cards
   
   }
+
+//   Check whether the size of the stack is equal to stackSize or not.
+
+// const stackSize = 4;
+// checkSizeOfStack([3, 2, 6, 4, 8], stackSize);
+// // => false
+
+function checkSizeOfStack(cards, stackSize) {
+    if(cards.length === stackSize){
+      return true
+    }else{
+      return false
+    }
+  }
+  
