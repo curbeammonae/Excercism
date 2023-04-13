@@ -16,3 +16,20 @@ function needsLicense(kind) {
     }
 
 }
+
+// You evaluate your options of available vehicles. You manage to narrow it down to two options but you need help making the final decision. For that implement the function chooseVehicle(option1, option2) that takes two vehicles as arguments and returns a decision that includes the option that comes first in dictionary order.
+
+// chooseVehicle('Wuling Hongguang', 'Toyota Corolla');
+// // =>  'Toyota Corolla is clearly the better choice.'
+
+// chooseVehicle('Volkswagen Beetle', 'Volkswagen Golf');
+// // =>  'Volkswagen Beetle is clearly
+
+function chooseVehicle(option1, option2) {
+    if(option1 < option2){
+      return option1 + ' is clearly the better choice.'
+    }else if(option2 < option1){
+      return option2 + ' is clearly the better choice.'
+    }
+  }
+  
