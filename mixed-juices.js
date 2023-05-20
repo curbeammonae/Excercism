@@ -21,3 +21,29 @@ const prepTime = {
       return 2.5;
     }}
   
+    /**
+ * Calculates the number of limes that need to be cut
+ * to reach a certain supply.
+ *
+ * @param {number} wedgesNeeded
+ * @param {string[]} limes
+ * @returns {number} number of limes cut
+ */
+export function limesToCut(wedgesNeeded, limes) {
+    const wedges = {
+      'small': 6,
+      'medium': 8,
+      'large': 10
+    }
+    let wedgesCut = 0;
+    let i = 0;
+    while (wedgesCut < wedgesNeeded) {
+      if(limes[i]) {
+        wedgesCut += wedges[limes[i]];
+        i++;
+      } else {
+        return i;
+      }
+    }
+    return i;
+  }
