@@ -19,3 +19,21 @@ function createScoreBoard() {
 function addPlayer(scoreBoard, player, score) {
     return scoreBoard[player,score]
 }
+
+// If players violate the rules of the arcade hall, they are manually removed from the high score board. Define removePlayer which takes 2 parameters:
+
+// The first parameter is an existing score board object.
+// The second parameter is the name of the player as a string.
+// This function should remove the entry for the given player from the board and return the board afterwards. If the player was not on the board in the first place, nothing should happen to the board. It should be returned as is.
+
+// removePlayer({ 'Dave Thomas': 0 }, 'Dave Thomas');
+// // => {}
+
+// removePlayer({ 'Dave Thomas': 0 }, 'Rose Fanaras');
+// // => { 'Dave Thomas': 0 }
+
+function removePlayer(scoreBoard, player) {
+    delete player;
+    return scoreBoard
+  }
+  
