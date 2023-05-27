@@ -36,4 +36,19 @@ function removePlayer(scoreBoard, player) {
     delete player;
     return scoreBoard
   }
-  
+//   If a player finishes another game at the arcade hall, a certain amount of points will be added to the previous score on the board. Implement updateScore, which takes 3 parameters:
+
+// The first parameter is an existing score board object.
+// The second parameter is the name of the player whose score should be increased.
+// The third parameter is the score that you wish to add to the stored high score.
+// The function should return the score board after the update was done.
+
+// updateScore({ 'Freyja Ćirić': 12771008 }, 'Freyja Ćirić', 73);
+// // => {"Freyja Ćirić", 12771081}
+
+function updateScore(scoreBoard, player, points) {
+    if(scoreBoard.hasOwnProperty(player)){
+        return scoreBoard += points
+    }
+   
+  }
