@@ -52,3 +52,20 @@ function updateScore(scoreBoard, player, points) {
     }
    
   }
+
+//   The arcade hall keeps a separate score board on Mondays. At the end of the day, each player on that board gets 100 additional points.
+
+// Implement the function applyMondayBonus that accepts a score board. The function adds the bonus points for each player that is listed on that board. Afterwards, the board is returned.
+
+// const scoreBoard = {
+//   'Dave Thomas': 44,
+//   'Freyja Ćirić': 539,
+//   'José Valim': 265,
+// };
+
+// applyMondayBonus(scoreBoard);
+// // => { 'Dave Thomas': 144, 'Freyja Ćirić': 639, 'José Valim': 365 }
+
+export function applyMondayBonus(scoreBoard) {
+ 
+  }
