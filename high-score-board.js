@@ -34,8 +34,8 @@ function addPlayer(scoreBoard, player, score) {
 // // => { 'Dave Thomas': 0 }
 
 function removePlayer(scoreBoard, player) {
-    delete player;
-    return scoreBoard
+  delete scoreBoard[player];
+  return scoreBoard;
   }
 //   If a player finishes another game at the arcade hall, a certain amount of points will be added to the previous score on the board. Implement updateScore, which takes 3 parameters:
 
