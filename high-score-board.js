@@ -17,7 +17,8 @@ function createScoreBoard() {
 // // => {'Dave Thomas': 0, 'José Valim': 486373}
 
 function addPlayer(scoreBoard, player, score) {
-    return scoreBoard[player,score]
+  scoreBoard[player] = score;
+  return scoreBoard;
 }
 
 // If players violate the rules of the arcade hall, they are manually removed from the high score board. Define removePlayer which takes 2 parameters:
