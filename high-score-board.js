@@ -48,9 +48,8 @@ function removePlayer(scoreBoard, player) {
 // // => {"Freyja Ćirić", 12771081}
 
 function updateScore(scoreBoard, player, points) {
-    if(scoreBoard.hasOwnProperty(player)){
-        return scoreBoard += points
-    }
+  scoreBoard[player] += points;
+  return scoreBoard;
    
   }
 
