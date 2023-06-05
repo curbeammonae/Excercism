@@ -67,6 +67,10 @@ function updateScore(scoreBoard, player, points) {
 // // => { 'Dave Thomas': 144, 'Freyja Ćirić': 639, 'José Valim': 365 }
 
 export function applyMondayBonus(scoreBoard) {
+  for (let key in scoreBoard) {
+    scoreBoard[key] += 100;
+  }
+  return scoreBoard;
  
   }
 
