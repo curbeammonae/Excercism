@@ -41,3 +41,13 @@ function fixBirdCountLog(birdsPerDay) {
     }
     return birdsPerDay;
   }
+
+  const fixBirdCountLog = (birdsPerDay) => {
+      birdsPerDay.forEach(element => {
+        if (i % 2 === 0) {
+          birdsPerDay += birdsPerDay + 1;
+        }
+
+        
+      });
+  }
