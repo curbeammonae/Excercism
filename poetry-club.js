@@ -37,6 +37,12 @@ function frontDoorPassword(word) {
       
     }
 
+    const frontDoorPassword = (word)  =>{
+      let letter = word[0].toUpperCase()
+    let sliced = word.slice(1).toLowerCase()
+      return `${sliced}${letter}`
+    }
+
 //     To determine letters for the back door password, you need to respond with the last letter of the line of the poem that the guard recites to you.
 
 // The members of the poetry club are really clever. The poem mentioned before is also telestich, which means that the last letter of each sentence also forms a word:
