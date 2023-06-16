@@ -94,6 +94,14 @@ function ticketStatus(tickets, ticketId) {
 // // => 'invalid ticket !!!'
 
 function simpleTicketStatus(tickets, ticketId) {
+    const name = tickets[ticketId];
+  switch (name) {
+    case undefined:
+    case null:
+      return 'invalid ticket !!!';
+    default:
+      return name;
+    }
 
   }
 
