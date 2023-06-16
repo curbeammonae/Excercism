@@ -62,9 +62,15 @@ function revokeTicket(visitor) {
 // // => 'sold to Verena Nardi'
 
 function ticketStatus(tickets, ticketId) {
-    if(!tickets.ticketId){
-        return null
-    }
+    const name = tickets[ticketId];
+  switch (name) {
+    case undefined:
+      return 'unknown ticket id';
+    case null:
+      return 'not sold';
+    default:
+      return `sold to ${name}`
+  }
   }
 
 //   After a while, you get feedback from the employees that they want the ticket status to be easier to understand at the first glance. They only want to see either the name of the visitor or that the ticket is invalid.
