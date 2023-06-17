@@ -133,4 +133,5 @@ function simpleTicketStatus(tickets, ticketId) {
   
 
 function gtcVersion(visitor) {
+    return visitor?.gtc?.version;
   }
