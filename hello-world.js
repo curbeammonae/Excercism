@@ -13,3 +13,6 @@ function hello() {
     
   }
   
+  const hello = () => {
+    return 'hello, world'
+  }
