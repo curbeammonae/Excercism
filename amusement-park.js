@@ -135,3 +135,9 @@ function simpleTicketStatus(tickets, ticketId) {
 function gtcVersion(visitor) {
     return visitor?.gtc?.version;
   }
+
+  const gtfVersion = (visitor) => {
+    if(visitor.gtc){
+      return visitor.gtc.version
+    }
+  }
