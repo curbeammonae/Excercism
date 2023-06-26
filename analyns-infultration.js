@@ -31,6 +31,12 @@ function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
     }
    }
 
+
+   const canSpy = (knightIsAwake, archerIsAwake, prisonerIsAwake) => {
+    !knightIsAwake && !archerIsAwake && !prisonerIsAwake ?  false :  true
+
+   }
+
 //    Implement a function named canSignalPrisoner that takes two boolean values, indicating if the archer and the prisoner, respectively, are awake. The function returns true if the 'Signal Prisoner' action is available based on the state of the characters. Otherwise, returns false:
 
 // const archerIsAwake = false;
