@@ -54,3 +54,7 @@ function canSignalPrisoner(archerIsAwake, prisonerIsAwake) {
       return true
     }
   }
+
+  const canSignalPrisoner = (archerIsAwake, prisonerIsAwake) => {
+    archerIsAwake || !prisonerIsAwake ? false : true
+  }
