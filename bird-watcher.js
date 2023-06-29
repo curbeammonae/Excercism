@@ -12,6 +12,12 @@ function totalBirdCount(birdsPerDay) {
       
   }
 
+const totalBirdCount = (birdsPerDay) => {
+  return birdsPerDay.reduce((a,b)=> a+b)
+}
+
+
+
 //   Now that you got a general feel for your bird count numbers, you want to make a more fine-grained analysis.
 
 // Implement a function birdsInWeek that accepts an array of bird counts per day and a week number. It returns the total number of birds that you counted in that specific week. You can assume weeks are always tracked completely.
