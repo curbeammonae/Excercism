@@ -9,6 +9,9 @@ function getItem(cards, position) {
     return cards[position]
  }
  
+ const getItem = (cards, position) => {
+  return cards[position]
+ }
 //  Perform some sleight of hand and exchange the card at index position with the replacement card provided. Return the adjusted stack.
 
 // const position = 2;
@@ -50,6 +53,7 @@ function removeItemFromTop(cards) {
     cards.pop()
     return cards
   }
+
 
 //   Make a card appear by inserting a new card at the bottom of the stack. Return the adjusted stack.
 
