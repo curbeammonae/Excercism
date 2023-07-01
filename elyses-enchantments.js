@@ -24,6 +24,11 @@ function getItem(cards, position) {
      return cards;
    }
 
+   const setItem = (cards, position, replacementCard) => {
+    cards.splice(position, 1, replacementCard);
+     return cards;
+   }
+
 //    Make a card appear by inserting a new card at the top of the stack. Return the adjusted stack.
 
 // const newCard = 8;
