@@ -39,6 +39,11 @@ function insertItemAtTop(cards, newCard) {
     cards.push(newCard)
     return cards
   }
+
+  const insertItemAtTop = (cards, newCard) => {
+    cards.push(newCard)
+    return cards
+  }
 //   Make a card disappear by removing the card at the given position from the stack. Return the adjusted stack.
 
 // const position = 2;
