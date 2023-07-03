@@ -55,6 +55,11 @@ function removeItem(cards, position) {
     cards.splice(position, 1)
     return cards
   }
+
+  const removeItem = (cards, position) => {
+    cards.splice(position, 1)
+    return cards
+  }
 //   Make a card disappear by removing the card at the top of the stack. Return the adjusted stack.
 
 // removeItemFromTop([3, 2, 6, 4, 8]);
