@@ -69,6 +69,11 @@ function removeItemFromTop(cards) {
     return cards
   }
 
+  const removeItemFromTop = (cards) => {
+    cards.pop()
+    return cards
+  }
+
 
 //   Make a card appear by inserting a new card at the bottom of the stack. Return the adjusted stack.
 
