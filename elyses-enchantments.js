@@ -85,7 +85,12 @@ function insertItemAtBottom(cards, newCard) {
     cards.unshift(newCard)
     return cards
   }
-//   Make a card disappear by removing the card at the bottom of the stack. Return the adjusted stack.
+
+  const insertItemAtBottom = (cards, newCard) => {
+    cards.unshift(newCard)
+    return cards
+  }
+ //   Make a card disappear by removing the card at the bottom of the stack. Return the adjusted stack.
 
 // removeItemAtBottom([8, 5, 9, 7, 1]);
 // // => [5, 9, 7, 1]
