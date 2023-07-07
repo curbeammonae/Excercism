@@ -101,6 +101,11 @@ function removeItemAtBottom(cards) {
   
   }
 
+  const removeItemAtBottom = (cards) => {
+    cards.shift()
+    return cards
+  }
+
 //   Check whether the size of the stack is equal to stackSize or not.
 
 // const stackSize = 4;
