@@ -120,3 +120,6 @@ function checkSizeOfStack(cards, stackSize) {
     }
   }
   
+  const checkSizeOfStack = (cards, stackSize) => {
+    cards.length === stackSize ? true : false;
+  }
