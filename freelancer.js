@@ -11,6 +11,10 @@ function dayRate(ratePerHour) {
   } 
   dayRate(89)
 
+  const dayRate = (ratePerHour) => {
+    let total = ratePerHour * 8
+    return total
+  }
 //   Another day, a project manager offers the freelancer to work on a project with a fixed budget. Given the fixed budget and the freelancer's hourly rate, help 
 // them calculate the number of days they would work until the budget is exhausted. The result must be rounded down to the nearest whole number.
 
