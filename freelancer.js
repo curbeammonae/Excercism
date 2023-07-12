@@ -28,6 +28,14 @@ function daysInBudget(budget, ratePerHour) {
     
   
   }
+
+  const daysInBudget = (budget, ratePerHour) => {
+    let dayRate = ratePerHour * 8
+    let total = budget / dayRate
+    return Math.floor(total)
+    
+  
+  }
   daysInBudget(20000, 89)
 
 //   Often, the freelancer's clients hire them for projects spanning over multiple months. In these cases, the
