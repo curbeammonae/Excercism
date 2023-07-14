@@ -55,3 +55,12 @@ function priceWithMonthlyDiscount(ratePerHour, numDays, discount) {
     
   }
   priceWithMonthlyDiscount(89, 230, .42) 
+
+  const priceWithMonthlyDiscount = (ratePerHour, numDays, discount) => {
+    let rate = ratePerHour * 8
+    let d = rate * numDays
+    let t = d * discount
+    let f = d - t
+    return Math.ceil(f) 
+
+  }
