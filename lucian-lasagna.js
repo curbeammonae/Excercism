@@ -18,6 +18,11 @@ export function remainingMinutesInOven(actualMinutesInOven) {
     return remain
     
   }
+
+  const remainingMinutesInOven = (actualMinutesInOven) => {
+    let remain= EXPECTED_MINUTES_IN_OVEN - actualMinutesInOven
+    return remain
+  }
   remainingMinutesInOven(30)
   
 //   Implement the preparationTimeInMinutes function that takes the number of layers 
