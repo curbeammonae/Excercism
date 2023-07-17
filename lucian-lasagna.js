@@ -37,6 +37,10 @@ export function preparationTimeInMinutes(numberOfLayers) {
     return min
 }
 
+const preparationTimeInMinutes = (numberOfLayers) => {
+  let min = numberOfLayers * PREPARATION_MINUTES_PER_LAYER
+  return min
+}
 preparationTimeInMinutes(2)
 
 
