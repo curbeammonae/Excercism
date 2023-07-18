@@ -58,4 +58,9 @@ export function totalTimeInMinutes(numberOfLayers, actualMinutesInOven) {
   return total
   
 }
+
+const totalTimeInMinutes = (numberOfLayers, actualMinutesInOven) => {
+  let total =  (numberOfLayers * PREPARATION_MINUTES_PER_LAYER) + actualMinutesInOven
+  return total
+}
 totalTimeInMinutes(3, 20)
