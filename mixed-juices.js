@@ -21,6 +21,14 @@ const prepTime = {
       return 2.5;
     }}
   
+
+    const timeToMixJuice = (name) => {
+      if(Object.keys(prepTime).includes(name)) {
+        return prepTime[name]
+      } else {
+        return 2.5;
+      }
+    }
     /**
  * Calculates the number of limes that need to be cut
  * to reach a certain supply.
@@ -63,4 +71,6 @@ export function remainingOrders(timeLeft, orders) {
       }
       return orders;
     }
+
+
     
