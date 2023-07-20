@@ -70,6 +70,12 @@ export function backDoorResponse(line) {
     return last
   }
 
+  const backDoorPassword = (line) => {
+    let rm = line.trim()
+    let last= rm[rm.length -1]
+    return last
+  }
+
 //   To enter the poetry club via the back door, you need to be extra polite. So to derive the password, this time you need to correctly capitalize the word and add ', please' at the end.
 
 // Implement the function backDoorPassword that accepts a string (the combined letters you found in task 3) and returns the polite version of the capitalized password.
