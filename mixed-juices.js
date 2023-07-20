@@ -55,7 +55,22 @@ export function limesToCut(wedgesNeeded, limes) {
     }
     return i;
   }
+ 
+  const limesToCut = (wedgesNeeded, limes) => {
+    const wedges = {
+      'small': 6,
+      'medium': 8,
+      'large': 10
+    }
+    let wedgesCut = 0;
+    let i = 0;
+    while (wedgesCut < wedgesNeeded) {
 
+      limes[i] ? wedgesCut += wedges[limes[i]] i++; : i
+     
+    }
+    return i;
+  }
   
 /**
  * Determines which juices still need to be prepared after the end of the shift.
