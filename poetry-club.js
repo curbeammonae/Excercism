@@ -83,9 +83,16 @@ export function backDoorResponse(line) {
 // backDoorPassword('horse');
 // // => "Horse, please"
 
-export function backDoorPassword(word) {
+ function backDoorPassword(word) {
     let letter = word[0].toUpperCase()
   let sliced = word.slice(1).toLowerCase()
     let f = letter + sliced
     return f + ', please'
+  }
+
+  const backDoorPassword = (word) => {
+    let letter = word[0].toUpperCase()
+    let sliced = word.slice(1).toLowerCase()
+      let f = letter + sliced
+      return f + ', please'
   }
