@@ -17,6 +17,10 @@ function needsLicense(kind) {
 
 }
 
+const needsLicense = (kind) => {
+  kind == 'car' || kind == 'truck' ? true : false
+}
+
 // You evaluate your options of available vehicles. You manage to narrow it down to two options but you need help making the final decision. For that implement the function chooseVehicle(option1, option2) that takes two vehicles as arguments and returns a decision that includes the option that comes first in dictionary order.
 
 // chooseVehicle('Wuling Hongguang', 'Toyota Corolla');
