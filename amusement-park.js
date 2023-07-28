@@ -21,6 +21,15 @@ function createVisitor(name, age, ticketId) {
 
 }
 
+const createVisitor = (name, age,ticketId) => {
+  return {
+    'name': name,
+    'age': age,
+    'ticketId' : ticketId,
+}
+
+}
+
 // When people leave the amusement park, their ticket gets revoked. If they come back, they need to buy a new one. To save regular visitors some time, they only need to register once and the visitor information will be kept for subsequent visits.
 
 // That means when a visitor leaves the park, only their ticket should be invalidated but the rest of the visitor object should stay the same. Implement the function revokeTicket that accepts a visitor object, sets the ticket identifier to null and returns the object afterwards.
