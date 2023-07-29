@@ -47,6 +47,8 @@ function revokeTicket(visitor) {
     return visitor
   }
 
+  const revokeTicket = (visitor) => {visitor.ticketId = null 
+    return visitor}
 //   To prevent forgery, the ticket identifiers are unique. Once a ticket is printed, its identifier is added as a key in an object in the system so it can be tracked.
 
 // Before the ticket is sold to a visitor, it is stored with the value null in the ticket tracking object. When it is sold to a visitor, the visitor's name is assigned as a value. When employees have doubts about the validity of a ticket, they need to check the status of the ticket in the system.
