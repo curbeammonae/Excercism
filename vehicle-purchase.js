@@ -71,4 +71,18 @@ function calculateResellPrice(originalPrice, age) {
     }
     
     }
+    const calculateResellPrice = (originalPrice, age) => {
+      if(age < 3){
+        let newPrice = originalPrice * .80
+        return newPrice
+      }else if(age > 10){
+          let newPrice = originalPrice * .50
+          return newPrice
+      
+      
+      }else if(age >= 3 && age <= 10){
+        let newPrice = originalPrice * .70
+        return newPrice
+    }
     
+  }
