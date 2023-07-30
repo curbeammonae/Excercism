@@ -84,6 +84,22 @@ function ticketStatus(tickets, ticketId) {
   }
   }
 
+  const ticketStatus = (tickets, ticketId) => {
+    const name = tickets[ticketId];
+    if(name == undefined){
+
+      return 'unknown ticket id';
+
+    }
+    else if(name == null){
+      return 'not sold';
+
+    }else{
+      return `sold to ${name}`
+
+    }
+    
+  }
 //   After a while, you get feedback from the employees that they want the ticket status to be easier to understand at the first glance. They only want to see either the name of the visitor or that the ticket is invalid.
 
 // Write a function simpleTicketStatus that accepts the same arguments as ticketStatus in task 3. This function only returns one of two different results.
