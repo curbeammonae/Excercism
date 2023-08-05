@@ -19,3 +19,14 @@ function cookingStatus(time) {
 function preparationTime(layers, timePerLayer=2) {
     return layers.length * timePerLayer;
     }
+
+
+    //Besides reserving the time, you also want to make sure you have enough sauce and noodles to cook the lasagna of your dreams. For each noodle layer in your lasagna, you will need 50 grams of noodles. For each sauce layer in your lasagna, you will need 0.2 liters of sauce.
+//
+// Define the function quantities that takes an array of layers as a parameter. The function will then determine the quantity of noodles and sauce needed to make your meal. The result should be returned as an object with keys noodles and sauc
+function quantities(ingredients) {
+    return {
+    noodles: ingredients.filter(i => i === 'noodles').length * 50,
+    sauce: ingredients.filter(i => i === 'sauce').length * 0.2,
+    }
+    }
