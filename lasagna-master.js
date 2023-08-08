@@ -30,3 +30,10 @@ function quantities(ingredients) {
     sauce: ingredients.filter(i => i === 'sauce').length * 0.2,
     }
     }
+
+    // A while ago you visited a friend and ate lasagna there. It was amazing and had something special to it. The friend sent you the list of ingredients and told you the last item on the list is the "secret ingredient" that made the meal so special. Now you want to add that secret ingredient to your recipe as well.
+
+    // Write a function addSecretIngredient that accepts two arrays of ingredients as parameters. The first parameter is the list your friend sent you and the second is the ingredient list for your own recipe. The function should add the last item from your friend's list to the end of your list. The array that represents your recipe should be modified directly and the function should not return anything. However, the first argument should not be modified
+    function addSecretIngredient(friendList, myList) {
+        myList.push(friendList[friendList.length - 1]);
+        }
