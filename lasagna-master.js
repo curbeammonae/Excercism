@@ -37,3 +37,20 @@ function quantities(ingredients) {
     function addSecretIngredient(friendList, myList) {
         myList.push(friendList[friendList.length - 1]);
         }
+
+
+        // The amounts listed in your cookbook only yield enough lasagna for two portions. Since you want to cook for more people next time, you want to calculate the amounts for different numbers of portions.
+
+        // Implement a function scaleRecipe that takes two parameters.
+        
+        // A recipe object that holds the amounts needed for 2 portions. The format of the object can be seen in the example below.
+        // The number of portions you want to cook.
+        // The function should return a recipe object with the amounts needed for the desired number of portions. You want to keep the original recipe though. This means, in this task the recipe argument should not be mod
+
+        function scaleRecipe(recipe, amount) {
+            const scaled = {};
+            for (const key in recipe) {
+            scaled[key] = recipe[key] * amount / 2;
+            }
+            return scaled;
+            }
