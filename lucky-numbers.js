@@ -5,3 +5,12 @@
 function twoSum(array1, array2) {
     return Number(array1.join('')) + Number(array2.join(''))
     }
+
+// Another game on the website is a little quiz called "Lucky Numbers". A user can enter a number and then sees whether the number belongs to some secret sequence or pattern. The sequence or pattern of the "lucky numbers" changes each month and each user only has a limited number of tries to guess it.
+
+// This months' lucky numbers should be numbers that are palindromes. Palindromic numbers remain the same when the digits are reversed.
+
+// Implement the new luckyNumber function that accepts a number as a parameter. The function should return true if the number is a palindrome and false otherwise. The input number will always be a positive inte
+function luckyNumber(value) {
+    return String(value) === [...String(value)].reverse().join('')
+    }
