@@ -14,3 +14,20 @@ function twoSum(array1, array2) {
 function luckyNumber(value) {
     return String(value) === [...String(value)].reverse().join('')
     }
+
+
+
+    // In various places on the website, there are input fields where the users can enter numbers and click a button to trigger some action. Kojo wants to improve the user experience of his site. He wants to show an error message in case the user clicks the button but the field contains an invalid input value.
+
+    // Here is some more information on how the value of an input field is provided.
+    
+    // If the user types something into a field, the associated value is always a string even if the user only typed in numbers.
+    // If the user types something but deletes it again, the variable will be an empty string.
+    // Before the user even started typing, the variable can be undefined or
+
+    function errorMessage(input) {
+        if(!input){
+        return 'Required field'
+        }
+        return Number(input) ? '' : 'Must be a number besides 0'
+        }
