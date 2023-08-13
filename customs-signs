@@ -1,0 +1,9 @@
+// Implement the function buildSign(occasion, name) that accepts a string as the occasion parameter and a string holding someone's name as the name parameter. The two parameters will be embedded into a template string to output the message on the sign.
+
+// buildSign('Birthday', 'Rob');
+// // => "Happy Birthday Ro
+
+
+function buildSign(occasion, name) {
+    return Happy ${occasion} ${name}!
+    }
