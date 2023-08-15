@@ -12,5 +12,11 @@ function buildSign(occasion, name) {
 // Implement the function buildBirthdaySign(age) that accepts an age and based on the age will determine part of the message on the sign. If the age is 50 or older, the sign will refer user as mature, else it will refer them as young. The exact expected output is shown below:
 
 function buildBirthdaySign(age) {
-    return Happy Birthday! What a ${age >= 50 ? 'mature' : 'young'} fellow you are.
+    return `Happy Birthday! What a ${age >= 50 ? 'mature' : 'young'} fellow you are.`
+    }
+
+//Implement the function graduationFor(name, year) which takes a name as a string parameter and a year as a number parameter and uses string interpolation to create a phrase for a sign that uses a newline to separate the two lines of the message.
+
+function graduationFor(name, year) {
+    return `Congratulations ${name}!\\nClass of ${year}`
     }
