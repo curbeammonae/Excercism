@@ -20,3 +20,9 @@ function buildBirthdaySign(age) {
 function graduationFor(name, year) {
     return `Congratulations ${name}!\\nClass of ${year}`
     }
+
+    // Implement the function costOf(sign, currency) which takes a string that holds the contents of the sign and a string that represents the currency. The sign has a base price of 20 in the given currency. Additionally each letter costs 2. (Whitespaces are included in the calculation.) The phrase returned includes the cost to create the sign, written with two digits after the decimal point, followed by the currency string.
+
+    function costOf(sign, currency) {
+        return `Your sign costs ${(sign.length * 2) + 20}.00 ${currency}.`
+        }
