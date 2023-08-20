@@ -9,3 +9,18 @@ function translate2d(dx, dy) {
     return [x + dx, y + dy];
     }
     }
+
+
+    // Implement the scale2d function that returns a function making use of a closure to perform a repeatable 2d scale of a coordinate pair.
+
+    // For this exercise, assume only positive scaling values.
+    
+    // const doubleScale = scale2d(2, 2);
+    // const result = doubleScale(6, -3);
+    // // result => [
+        
+    function scale2d(sx, sy) {
+        return function scale(x, y) {
+        return [x * sx, y * sy];
+        }
+        }
