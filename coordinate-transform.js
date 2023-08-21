@@ -24,3 +24,21 @@ function translate2d(dx, dy) {
         return [x * sx, y * sy];
         }
         }
+
+
+        // Combine two transformation functions to perform a repeatable transformation. This is often called function composition, where the result of the first function 'f(x)' is used as the input to the second function 'g(x)'.
+
+        // const moveCoordinatesRight2Px = translate2d(2, 0);
+        // const doubleCoordinates = scale2d(2, 2);
+        // const composedTransformations = composeTransform(
+        //   moveCoordinatesRight2Px,
+        //   doubleCoordinates,
+        // );
+        // const result = composedTransformations(0, 1);
+       
+        function composeTransform(f, g) {
+            return function composed(x, y) {
+            return g(...f(x, y))
+            }
+            }
+    
