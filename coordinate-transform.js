@@ -41,4 +41,18 @@ function translate2d(dx, dy) {
             return g(...f(x, y))
             }
             }
-    
+
+ // Implement the memoizeTransform function. It takes a function to memoize, then returns a new function that remembers the inputs to the supplied function so that the last return value can be "remembered" and only calculated once if it is called again with the same arguments.
+
+// Memoizing is sometimes used in dynamic programming. It allows for expensive operations to be done only once since their results are remembered. Note that in this exercise only the last result is remembered, unlike some solutions in dynamic programming that memoize all result
+function memoizeTransform(f) {
+    let previousX, previousY, previousResult
+    return function memoised(x, y) {
+    if (previousX === x && previousY === y) {
+    return previousResult
+    }
+    previousX = x
+    previousY = y
+    return previousResult = f(x, y)
+    }
+    }
