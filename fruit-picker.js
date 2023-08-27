@@ -3,3 +3,8 @@
 function onSuccess() {
     notify({ message: 'SUCCESS' })
     }
+
+    // Write a callback function called onError to be called when the order encounters an error. It should invoke the imported notify function passing an error message to it.
+    function onError() {
+        notify({ message: 'ERROR' })
+        }
