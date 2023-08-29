@@ -18,3 +18,9 @@ function orderFromGrocer(query, onSuccessCallback, onErrorCallback) {
     order(query, onSuccessCallback, onErrorCallback)
     }
 
+
+// You find that you are calling this function from many different places with the same functions. Seeing an opportunity to refactor your code, you want to create a function where you can supply the variety and quantity to order as arguments.
+
+function postOrder(variety, quantity) {
+    orderFromGrocer({ variety, quantity }, onSuccess, onError)
+    }
