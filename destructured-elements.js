@@ -23,3 +23,15 @@ function getSecondCard(deck) {
         const [first, second, ...everythingElse] = deck;
         return second;
         }
+
+//  Elyse will make the top two cards of the deck switch places. She doesn't need to call a single function.
+
+// const deck = [10, 7, 3, 8, 5];
+        
+// swapTopTwoCards(deck);
+
+
+function swapTopTwoCards(deck) {
+    const [first, second, ...everythingElse] = deck;
+    return [second, first, ...everythingElse];
+    }
