@@ -35,3 +35,15 @@ function swapTopTwoCards(deck) {
     const [first, second, ...everythingElse] = deck;
     return [second, first, ...everythingElse];
     }
+
+    // Elyse will separate the deck into two piles. The first pile will contain only the top card of the original deck, while the second pile will contain all the other cards.
+
+    // const deck = [2, 5, 4, 9, 3];
+    
+    // discardTopCard(deck);
+    // // => [2, [5, 4, 9
+
+    function discardTopCard(deck) {
+        const [first, ...everythingElse] = deck;
+        return [first, everythingElse];
+        }
