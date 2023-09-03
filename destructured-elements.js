@@ -47,3 +47,16 @@ function swapTopTwoCards(deck) {
         const [first, ...everythingElse] = deck;
         return [first, everythingElse];
         }
+
+ // Elyse will insert a set of face cards (i.e. jack, queen, and king) into her deck such that they become the second, third, and fourth cards, respectively.
+ // const deck = [5, 4, 7, 10];
+        
+ // insertFaceCards(deck);
+  // // => [5, 'jack', 'queen', 'king', 4, 7
+
+  const FACE_CARDS = ['jack', 'queen', 'king'];
+ 
+  export function insertFaceCards(deck) {
+  const [first, ...everythingElse] = deck;
+  return [first, ...FACE_CARDS, ...everythingElse];
+  }
