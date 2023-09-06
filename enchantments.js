@@ -18,3 +18,13 @@ function getCardPosition(stack, card) {
 function doesStackIncludeCard(stack, card) {
     return stack.includes(card)
 }  
+
+
+// Elyse wants to know if every card is even -- in other words, if each number in the stack is an even number.
+
+// isEachCardEven([2, 4, 6, 7]);
+// // => fa
+
+function isEachCardEven(stack) {
+    return stack.every((num) => num % 2 === 0);
+    }
