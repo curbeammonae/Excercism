@@ -7,3 +7,14 @@
 function getCardPosition(stack, card) {
     return stack.indexOf(card)
 }  
+
+
+// Elyse wants to determine if a card is present in the stack -- in other words, if the stack contains a specific number.
+
+// const card = 3;
+// doesStackIncludeCard([2, 3, 4, 5], card);
+// // => 
+
+function doesStackIncludeCard(stack, card) {
+    return stack.includes(card)
+}  
