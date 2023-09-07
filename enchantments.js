@@ -28,3 +28,14 @@ function doesStackIncludeCard(stack, card) {
 function isEachCardEven(stack) {
     return stack.every((num) => num % 2 === 0);
     }
+
+
+// Elyse wants to know if there is an odd number in the stack.
+
+// doesStackIncludeOddCard([3, 2, 6, 4, 8]);
+// // => t
+
+
+function doesStackIncludeOddCard(stack) {
+    return stack.some((num) => num % 2 !== 0);
+    }
