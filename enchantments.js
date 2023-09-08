@@ -39,3 +39,12 @@ function isEachCardEven(stack) {
 function doesStackIncludeOddCard(stack) {
     return stack.some((num) => num % 2 !== 0);
     }
+
+
+// Elyse wants to know the value of the first card that is odd.
+
+// getFirstOddCard([4, 2, 8, 7, 9]);
+
+function getFirstOddCard(stack) {
+    return stack.find((num) => num % 2 !== 0);
+    }
