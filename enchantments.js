@@ -48,3 +48,13 @@ function doesStackIncludeOddCard(stack) {
 function getFirstOddCard(stack) {
     return stack.find((num) => num % 2 !== 0);
     }
+
+
+    // Elyse wants to know the position of the first card that is even.
+
+    // getFirstEvenCardPosition([5, 2, 3, 1]);
+    // // =
+
+    function getFirstEvenCardPosition(stack) {
+        return stack.findIndex((num) => num % 2 === 0);
+        }
