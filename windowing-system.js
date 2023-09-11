@@ -10,3 +10,19 @@ function Size(width = 80, height = 60) {
     this.width = newWidth
     this.height = newHeight
     }
+
+
+    // Define a class (constructor function) named Position with two fields, x and y that store the current horizontal and vertical position, respectively, of the window's upper left corner. The constructor function should accept initial values for these fields. The value for x is provided as the first parameter, the value for y as the second one. The default value should be 0 for both fields.
+
+    // The position (0, 0) is the upper left corner of the screen with x values getting larger as you move right and y values getting larger as you move down.
+    
+    // Also define a method move(newX, newY) that takes new x and y parameters and changes the properties to reflect the new positi
+
+    function Position(x = 0, y = 0) {
+        this.x = x
+        this.y = y
+        }
+        Position.prototype.move = function move(newX, newY) {
+        this.x = newX
+        this.y = newY
+        }
