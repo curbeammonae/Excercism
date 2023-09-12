@@ -26,3 +26,24 @@ function Size(width = 80, height = 60) {
         this.x = newX
         this.y = newY
         }
+
+        // Define a ProgramWindow class with the following fields:
+
+        // screenSize: holds a fixed value of type Size with width 800 and height 600
+        // size : holds a value of type Size, the initial value is the default value of the Size instance
+        // position : holds a value of type Position, the initial value is the default value of the Position instance
+        // When the window is opened (created), it always has the default size and position in the beginning.
+        
+        // const programWindow = new ProgramWindow();
+        // programWindow.screenSize.width;
+        // // => 800
+        
+        // // Similar for the ot
+
+        export class ProgramWindow {
+            constructor() {
+            this.screenSize = new Size(800, 600)
+            this.size = new Size();
+            this.position = new Position();
+            }
+        }
