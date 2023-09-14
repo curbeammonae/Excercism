@@ -47,3 +47,17 @@ function Size(width = 80, height = 60) {
             this.position = new Position();
             }
         }
+
+        // The ProgramWindow class should include a method resize. It should accept a parameter of type Size as input and attempts to resize the window to the specified size.
+
+        // However, the new size cannot exceed certain bounds.
+        
+        // The minimum allowed height or width is 1. Requested heights or widths less than 1 will be clipped to 1.
+        // The maximum height and width depend on the current position of the window, the edges of the window cannot move past the edges of the screen. Values larger than these bounds will be clipped to the largest size they can take. E.g. if the window's position is at x = 400, y = 300 and a resize to height = 400, width = 300 is requested, then the window would be resized to height = 300, width = 300 as the screen is not large enough in the y direction to fully accommodate the req
+        resize(newSize) {
+            const maxWidth = this.screenSize.width - this.position.x
+            const maxHeight = this.screenSize.height - this.position.y
+            const newWidth = Math.max(1, Math.min(newSize.width, maxWidth))
+            const newHeight = Math.max(1, Math.min(newSize.height, maxHeight))
+            this.size.resize(newWidth, newHeight)
+            }
