@@ -61,3 +61,18 @@ function Size(width = 80, height = 60) {
             const newHeight = Math.max(1, Math.min(newSize.height, maxHeight))
             this.size.resize(newWidth, newHeight)
             }
+            // Besides the resize functionality, the ProgramWindow class should also include a method move. It should accept a parameter of type Position as input. The move method is similar to resize however, this method adjusts the position of the window to the requested value, rather than the size.
+
+            // As with resize the new position cannot exceed certain limits.
+            
+            // The smallest position is 0 for both x and y.
+            // The maximum position in either direction depends on the current size of the window. The edges cannot move past the edges of the screen. Values larger than these bounds will be clipped to the largest size they can take. E.g. if the window's size is at x = 250, y = 100 and a move to x = 600, y = 200 is requested, then the window would be moved to x = 550, y = 200 as the screen is not large enough in the x direction to fully accommodate the req
+
+            move(newPosition) {
+                const maxX = this.screenSize.width - this.size.width;
+                const maxY = this.screenSize.height - this.size.height;
+                const newX = Math.max(0, Math.min(newPosition.x, maxX))
+                const newY = Math.max(0, Math.min(newPosition.y, maxY))
+                this.position.move(newX, newY);
+                }
+                
