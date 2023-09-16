@@ -76,3 +76,16 @@ function Size(width = 80, height = 60) {
                 this.position.move(newX, newY);
                 }
                 
+
+//  Implement a changeWindow function that accepts a ProgramWindow instance as input and changes the window to the specified size and position. The function should return the ProgramWindow instance that was passed in after the changes were applied.
+
+//  The window should get a width of 400, a height of 300 and be positioned at x = 100, y = 15
+
+function changeWindow(programWindow) {
+    // Move to the top-left corner first so it can always resize
+    programWindow.move(new Position())
+    // Now resize, then reposition
+    programWindow.resize(new Size(400, 300))
+    programWindow.move(new Position(100, 150))
+    return programWindow
+    }
