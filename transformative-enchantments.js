@@ -41,3 +41,15 @@ function threeOfEachThree(deck) {
         return result
         }, []);
         }
+
+        // Elyse will take a deck of ten cards, and make every card disappear except the middle two cards.
+
+        // const deck = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // middleTwo(deck);
+        // // => [5
+
+
+        function middleTwo(deck) {
+            const mid = deck.length / 2 - 1
+            return deck.slice(mid, mid+2);
+            }
