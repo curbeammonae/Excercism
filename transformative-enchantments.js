@@ -53,3 +53,18 @@ function threeOfEachThree(deck) {
             const mid = deck.length / 2 - 1
             return deck.slice(mid, mid+2);
             }
+
+
+            // Elyse wants to move the top and bottom cards of the deck into the middle, in reverse order.
+
+            // You can assume that the deck has an even number of cards.
+            
+            // const deck = [1, 2, 3, 5, 6, 10];
+            // sandwichTrick(deck);
+            // // => [2, 3, 10, 1,
+            function sandwichTrick(deck) {
+                const mid = deck.length / 2;
+                deck.splice(mid, 0, deck.pop());
+                deck.splice(mid, 0, deck.shift());
+                return deck;
+                }
