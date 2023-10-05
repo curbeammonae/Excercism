@@ -68,3 +68,10 @@ function threeOfEachThree(deck) {
                 deck.splice(mid, 0, deck.shift());
                 return deck;
                 }
+//    Elyse's favorite number today is 2. In this trick, every card that isn't a 2 will disappear from the deck.
+
+// const deck = [1, 2, 3, 4, 10, 2];
+//   twoIsSpecial(deck);
+function twoIsSpecial(deck) {
+    return deck.filter(card => card == 2);
+    }
