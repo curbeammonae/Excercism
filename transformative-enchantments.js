@@ -75,3 +75,14 @@ function threeOfEachThree(deck) {
 function twoIsSpecial(deck) {
     return deck.filter(card => card == 2);
     }
+
+    // Elyse wishes to demonstrate her mastery of reordering the cards perfectly - no matter how well shuffled.
+
+    // const deck = [10, 1, 5, 3, 2, 8, 7];
+    // perfectlyOrdered(deck);
+    // // => [1, 2, 3, 5, 7, 8,
+
+    function perfectlyOrdered(deck) {
+        deck.sort((a, b) => a - b);
+        return deck;
+        }
