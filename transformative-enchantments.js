@@ -86,3 +86,15 @@ function twoIsSpecial(deck) {
         deck.sort((a, b) => a - b);
         return deck;
         }
+
+        // Elyse wants to change the order of the cards in the deck. After the trick, the card that is currently at the top should end up at the bottom of the deck. The second card should end up second last etc.
+
+        // const deck = [10, 1, 5, 3, 2];
+        // reorder(deck);
+        // // => [2, 3, 5, 1,
+
+
+        function reorder(deck) {
+            deck.reverse();
+            return deck;
+            }
