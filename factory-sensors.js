@@ -43,3 +43,31 @@ class OverheatingError extends Error {
         }
         throw new OverheatingError(temperature);
         }
+        // Now that your machine can detect errors, you will implement a function that reacts to those errors in different ways :
+
+        // If the sensor is broken, you need to warn a technician
+        // If the temperature is too high, you will either shut down the machine if the temperature exceeds 600°C or turn on a warning light if it is less than that.
+        // If another error happens, you'll rethrow it.
+        // Implements a function monitorTheMachine that takes an argument actions.
+        
+        // actions is an object that has 4 properties :
+        
+        // check is a function that, when called, checks the temperature of the machine. It may throw vario
+
+        function monitorTheMachine({check, alertDeadSensor, alertOverheating, shutdown}) {
+            try {
+            check();
+            } catch (error) {
+            if (error instanceof ArgumentError) {
+            alertDeadSensor();
+            } else if (error instanceof OverheatingError) {
+            if (error.temperature < 600) {
+            alertOverheating()
+            } else {
+            shutdown()
+            }
+            } else {
+            throw error;
+            }
+            }
+            }
