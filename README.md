@@ -2,7 +2,7 @@
 
 A repository filled with Exercism challenges and problems from Exercism.com
 
-#How It's Made
+# How It's Made
 
 Tech used: Javascript
 
