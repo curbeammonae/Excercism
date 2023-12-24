@@ -5,3 +5,6 @@
 // Uses the api.fetch method (api.fetch returns a promise
 
 
+function method(go){
+console.log('go')
+}
